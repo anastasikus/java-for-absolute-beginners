@@ -1,4 +1,4 @@
-package main.java;
+package de.java.beginners;
 
 public class ShoppingList {
     public static void main(String[] args) {

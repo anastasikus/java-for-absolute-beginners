@@ -1,4 +1,4 @@
-package main.java; 
-public class Tast
-{
+package de.java.beginners;
+
+public class Tast {
 }
