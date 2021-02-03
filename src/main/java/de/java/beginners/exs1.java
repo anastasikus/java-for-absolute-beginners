@@ -9,10 +9,10 @@ public class exs1 {
     public static void main(String[] args) {
 
         guests[0] = "Jacob";
-        guests[1] = "Edward";
-        guests[2] = "Rose";
-        guests[3] = "Molly";
-        guests[4] = "Christopher";
+        //guests[1] = "Edward";
+        //guests[2] = "Rose";
+        //guests[3] = "Molly";
+        //guests[4] = "Christopher";
 
         do {
             System.out.println();
@@ -53,19 +53,20 @@ public class exs1 {
                 System.out.println("Exiting...");
                 break;
             }
-
-
         } while (true);
-
-
     }
 
     static void displayGuests() {
         System.out.println("____________________\n- Guests -\n");
+        boolean guestfound = false;
         for (int i = 0; i < guests.length; i++) {
             if (guests[i] != null) {
                 System.out.println(i + 1 + ". " + guests[i]);
+                guestfound = true;
             }
+        }
+        if (guestfound == false) {
+            System.out.println("Guest list is empty.");
         }
     }
 
@@ -74,17 +75,16 @@ public class exs1 {
         System.out.println("1 - Add Guest");
         System.out.println("2 - Remove Guest");
         System.out.println("3 - Exit");
-
     }
 
     static int getOption() {
         System.out.print("Option: ");
         int option = scanner.nextInt();
-        System.out.println();
         return option;
-
     }
 }
+
+
 
 
 
