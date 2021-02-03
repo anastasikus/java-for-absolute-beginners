@@ -58,14 +58,14 @@ public class exs1 {
 
     static void displayGuests() {
         System.out.println("____________________\n- Guests -\n");
-        boolean guestfound = false;
+        boolean guestFound = false;
         for (int i = 0; i < guests.length; i++) {
             if (guests[i] != null) {
                 System.out.println(i + 1 + ". " + guests[i]);
-                guestfound = true;
+                guestFound = true;
             }
         }
-        if (guestfound == false) {
+        if (!guestFound) {
             System.out.println("Guest list is empty.");
         }
     }
