@@ -71,7 +71,7 @@ public class exs1 {
     }
 
     static void displayMenu() {
-        System.out.println("________________________\n- Menu -\n");
+        System.out.println("_________________________\n- Menu -\n");
         System.out.println("1 - Add Guest");
         System.out.println("2 - Remove Guest");
         System.out.println("3 - Exit");
