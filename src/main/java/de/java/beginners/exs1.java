@@ -79,8 +79,7 @@ public class exs1 {
 
     static int getOption() {
         System.out.print("Option: ");
-        int option = scanner.nextInt();
-        return option;
+        return scanner.nextInt();
     }
 }
 
