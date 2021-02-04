@@ -57,7 +57,7 @@ public class exs1 {
     }
 
     static void displayGuests() {
-        System.out.println("____________________\n- Guests -\n");
+        System.out.println("_____________________\n- Guests -\n");
         boolean guestFound = false;
         for (int i = 0; i < guests.length; i++) {
             if (guests[i] != null) {
