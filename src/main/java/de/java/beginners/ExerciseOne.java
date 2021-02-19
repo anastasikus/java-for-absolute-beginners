@@ -2,7 +2,7 @@ package de.java.beginners;
 
 import java.util.Scanner;
 
-public class exs1 {
+public class ExerciseOne {
     static String[] guests = new String[10];
     static Scanner scanner = new Scanner(System.in);
 
@@ -106,13 +106,11 @@ public class exs1 {
     static void insertGuest() {
         System.out.print("Number: ");
         int num = scanner.nextInt();
-        int count = num - 1;
-
         scanner.nextLine();
         System.out.print("Name: ");
         String name = scanner.nextLine();
-        for (int i = guests.length - 2; i >= count; i--) {
-            guests[i + 1] = guests[i];
+        for (int i = guests.length - 1; i > num - 1; i--) {
+            guests[i] = guests[i - 1];
         }
         guests[num - 1] = name;
 
